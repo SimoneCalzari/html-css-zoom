@@ -9,17 +9,66 @@
 /* #endregion RESET */
 
 /* #region GENERAL */
+
+
+
 /* #endregion GENERAL */
 
 /* #region COMMON */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* #endregion COMMON */
 
 /* #region HEADER */
+
+header {
+  height: 40px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
 /* #endregion HEADER */
 
 /* #region MAIN */
+
+main {
+  height: calc(100% - 120px);
+  padding: 60px 0 110px;
+}
+
+main .video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  gap: 10px;
+}
+
+main .video .videos {
+  width: 150px;
+  border: 1px solid black;
+  height: 90px;
+}
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
+
+footer {
+  height: 80px;
+  background-color: #222222;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /* #endregion FOOTER */
 
