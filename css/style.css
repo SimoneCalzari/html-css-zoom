@@ -12,8 +12,18 @@
 
 body {
   height: 100vh;
-  padding: 40px 0 80px;
+  padding: 40px 0 70px;
   background-color: black;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* #endregion GENERAL */
@@ -38,21 +48,19 @@ header {
   left: 0;
 }
 
-header .button-bar {
+header .button-bar-header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
 }
 
-header .button-bar button {
+header .button-bar-header button {
   background-color: #4a4a4a;
-  color: white;
   padding: 5px;
   margin-right: 5px;
   border-radius: 6px;
   font-size: 11px;
-  border: none;
 }
 
 /* #endregion HEADER */
@@ -81,10 +89,6 @@ main .video .videos {
 
 }
 
-/* main .video .videos .img {
-  display: block;
-} */
-
 main .video .videos .pinco {
   color: white;
   background-color: rgba(0,0,0,0.25);
@@ -92,7 +96,7 @@ main .video .videos .pinco {
   position: absolute;
   left: 0;
   bottom: 0;
-  font-size: 12px;
+  font-size: 13px;
   padding: 5px;
 
 }
@@ -101,12 +105,57 @@ main .video .videos .pinco {
 /* #region FOOTER */
 
 footer {
-  height: 80px;
+  height: 70px;
   background-color: #222222;
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+footer .button-bar-footer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .button-bar-footer > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+footer button {
+  height: 100%;
+  background-color: transparent;
+}
+
+.icon-text {
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+.icon {
+  font-size: 11px;
+  padding: 0 7px;
+}
+
+footer h6 {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.buttons-center button:nth-child(4) i {
+  color: #4bc800;
+}
+
+.buttons-right button {
+  color: red;
+  background-color: #4a4a4a;
+  padding: 0 20px;
+  font-size: 14px;
 }
 
 /* #endregion FOOTER */
