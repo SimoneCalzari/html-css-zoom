@@ -11,9 +11,9 @@
 /* #region GENERAL */
 
 body {
-  height: 100vh;
-  padding: 40px 0 70px;
-  background-color: black;
+  /* PER CASO CON HEADER FOOTER FIXED, VALORI MINIMI, SCROLL VERTICALE A TUTTA VH */
+  /* padding: 40px 0 70px; */
+  /* PER CASO CON HEADER FOOTER FIXED, VALORI MINIMI, SCROLL VERTICALE A TUTTA VH */
 }
 
 button {
@@ -42,10 +42,13 @@ button:hover {
 header {
   height: 40px;
   background-color: black;
-  position: fixed;
+  /* PER CASO CON HEADER FOOTER FIXED, VALORI MINIMI, SCROLL VERTICALE A TUTTA VH */
+  /* position: fixed;
   top: 0;
   right: 0;
-  left: 0;
+  left: 0; */
+  /* PER CASO CON HEADER FOOTER FIXED, VALORI MINIMI, SCROLL VERTICALE A TUTTA VH */
+
 }
 
 header .button-bar-header {
@@ -68,8 +71,9 @@ header .button-bar-header button {
 /* #region MAIN */
 
 main {
-  height: 100%;
+  height: calc(100vh - 110px);
   overflow: auto;
+  background-color: black;
 }
 
 main .video {
@@ -107,10 +111,12 @@ main .video .videos .pinco {
 footer {
   height: 70px;
   background-color: #222222;
-  position: fixed;
+  /* PER CASO CON HEADER FOOTER FIXED, VALORI MINIMI, SCROLL VERTICALE A TUTTA VH */
+  /* position: fixed;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 0; */
+  /* PER CASO CON HEADER FOOTER FIXED, VALORI MINIMI, SCROLL VERTICALE A TUTTA VH */
 }
 
 footer .button-bar-footer {
